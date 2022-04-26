@@ -39,10 +39,10 @@ class _Main1ViewState extends State<Main1View> {
                 height: width * 1.43,
                 width: width,
                 decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage('assets/splash/splash-home.png'),
-                  ),
+                  // image: DecorationImage(
+                  //   fit: BoxFit.fill,
+                  //   image: AssetImage('assets/splash/splash-home.png'),
+                  // ),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -73,12 +73,12 @@ class _Main1ViewState extends State<Main1View> {
                 )),
             OpenFlutterBlockHeader(
               width: widgetWidth,
-              title: 'New',
-              linkText: 'View All',
+              title: 'Title',
+              linkText: 'Button',
               onLinkTap: () => {
                 Navigator.of(context).pushNamed(OpenFlutterEcommerceRoutes.shop, arguments: CategoriesParameters(0))
               },
-              description: 'You’ve never seen it before!',
+              description: 'Title1',
             ),
             OpenFlutterProductListView(
               width: widgetWidth,

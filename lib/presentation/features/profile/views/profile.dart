@@ -40,15 +40,15 @@ class _ProfileViewState extends State<ProfileView> {
               leading: Container(
                 height: 60.0,
                 width: 60.0,
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage('assets/profile/user-profile.jpeg'))),
+                // decoration: BoxDecoration(
+                //     shape: BoxShape.circle,
+                //     image: DecorationImage(
+                //         fit: BoxFit.cover,
+                //         image: AssetImage('assets/profile/user-profile.jpeg'))),
               ),
               title: Text(
                 //TODO: take from profile info
-                'Matilda Brown',
+                'Name',
                 style: TextStyle(
                   color: AppColors.black,
                   fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _ProfileViewState extends State<ProfileView> {
               ),
               subtitle: Text(
                 //TODO: take from profile info
-                'matildabrown@mail.com',
+                'cuahangdaquy@mail.com',
                 style: TextStyle(
                     color: AppColors.lightGray, fontWeight: FontWeight.bold),
               ),
@@ -67,7 +67,7 @@ class _ProfileViewState extends State<ProfileView> {
             OpenFlutterMenuLine(
               title: 'My orders',
               //TODO: make short card info
-              subtitle: 'Already Have 12 orders',
+              subtitle: 'Already Have 10 orders',
               onTap: (() => {
                 bloc..add(ProfileMyOrdersEvent()),
                 widget.changeView(
